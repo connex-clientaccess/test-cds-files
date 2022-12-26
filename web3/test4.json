@@ -1,13 +1,13 @@
 {
-  "key": "test3",
-  "name": "test cds3",
-  "version": "1.0.3",
-  "platformVersion": "1.0.3",
+  "key": "test4",
+  "name": "test cds4",
+  "version": "1.0.4",
+  "platformVersion": "1.0.4",
   "type": "web3",
   "actions": [
     {
-      "key": "testMint3",
-      "name": "Test Mint",
+      "key": "testMint4",
+      "name": "Test Mint4",
       "display": {
         "label": "Test Mint",
         "description": "Test Mint"
