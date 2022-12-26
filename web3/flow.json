@@ -1,8 +1,8 @@
 {
   "key": "flow",
-  "name": "Flow",
-  "version": "1.0.0",
-  "platformVersion": "1.0.0",
+  "name": "Flow2",
+  "version": "1.0.1",
+  "platformVersion": "1.0.1",
   "triggers": [
     {
       "key": "TokenTransferTrigger",
