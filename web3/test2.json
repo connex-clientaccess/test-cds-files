@@ -1,8 +1,8 @@
 {
   "key": "test2",
-  "name": "test cds2",
-  "version": "1.0.1",
-  "platformVersion": "1.0.1",
+  "name": "test cds",
+  "version": "1.0.2",
+  "platformVersion": "1.0.2",
   "type": "web3",
   "actions": [
     {
