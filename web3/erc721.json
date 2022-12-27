@@ -1,7 +1,7 @@
 {
   "key": "erc721",
-  "name": "NFT on EVM Chains",
-  "version": "1.0.0",
+  "name": "NFT for test",
+  "version": "1.0.2",
   "platformVersion": "1.0.0",
   "triggers": [
     {
