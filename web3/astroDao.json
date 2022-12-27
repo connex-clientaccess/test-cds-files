@@ -1,8 +1,8 @@
 {
   "key": "astroDao",
-  "name": "Astro DAO",
-  "version": "1.0.0",
-  "platformVersion": "1.0.0",
+  "name": "Astro change",
+  "version": "1.0.1",
+  "platformVersion": "1.0.1",
   "triggers": [
     {
       "key": "NewProposalTrigger",

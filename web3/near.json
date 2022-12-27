@@ -1,8 +1,8 @@
 {
   "key": "near",
-  "name": "change in near protocol",
-  "version": "1.0.1",
-  "platformVersion": "1.0.1",
+  "name": "change in near protocol2",
+  "version": "1.0.2",
+  "platformVersion": "1.0.2",
   "triggers": [
     {
       "key": "NFTTransferTrigger",
