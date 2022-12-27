@@ -1,7 +1,7 @@
 {
   "key": "near",
-  "name": "NEAR Protocol",
-  "version": "1.0.0",
+  "name": "NEAR",
+  "version": "1.0.1",
   "platformVersion": "1.0.0",
   "triggers": [
     {

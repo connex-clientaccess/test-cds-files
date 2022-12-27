@@ -1,8 +1,8 @@
 {
   "key": "algorand",
-  "name": "Algorand",
-  "version": "1.0.0",
-  "platformVersion": "1.0.0",
+  "name": "Algorand2",
+  "version": "1.0.2",
+  "platformVersion": "1.0.2",
   "triggers": [
     {
       "key": "newTransaction",
