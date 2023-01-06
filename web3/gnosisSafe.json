@@ -1,0 +1,341 @@
+{
+  "key": "gnosisSafe",
+  "name": "Gnosis Safe",
+  "version": "1.0.0",
+  "platformVersion": "1.0.0",
+  "triggers": [
+    {
+      "key": "SafeMultiSigTransactionTrigger",
+      "name": "Safe Transaction (triggered by owner)",
+      "display": {
+        "label": "Safe Transaction (triggered by owner)",
+        "description": "Safe Transaction (triggered by owner)"
+      },
+      "operation": {
+        "type": "blockchain:event",
+        "signature": "event SafeMultiSigTransaction(address to, uint256 value, bytes data, uint8 operation, uint256 safeTxGas, uint256 baseGas, uint256 gasPrice, address gasToken, address refundReceiver, bytes signatures, bytes additionalInfo)",
+        "inputFields": [
+          {
+            "key": "to",
+            "label": "Recipient",
+            "type": "string",
+            "placeholder": "0x...",
+            "list": false,
+            "helpText": "Enter recipient's blockchain address",
+            "default": "",
+            "required": false,
+            "computed": false
+          },
+          {
+            "key": "value",
+            "label": "Amount",
+            "type": "string",
+            "placeholder": "",
+            "list": false,
+            "helpText": "",
+            "default": "",
+            "required": false,
+            "computed": false
+          },
+          {
+            "key": "data",
+            "label": "Data",
+            "type": "string",
+            "placeholder": "",
+            "list": false
+          },
+          {
+            "key": "operation",
+            "label": "Operation",
+            "type": "number",
+            "placeholder": "",
+            "list": false
+          },
+          {
+            "key": "safeTxGas",
+            "label": "Safe Tx Gas",
+            "type": "string",
+            "placeholder": "",
+            "list": false
+          },
+          {
+            "key": "baseGas",
+            "label": "Base Gas",
+            "type": "string",
+            "placeholder": "",
+            "list": false
+          },
+          {
+            "key": "gasPrice",
+            "label": "Gas Price",
+            "type": "string",
+            "placeholder": "",
+            "list": false
+          },
+          {
+            "key": "gasToken",
+            "label": "Gas Token",
+            "type": "string",
+            "placeholder": "0x...",
+            "list": false,
+            "helpText": "Enter a blockchain address",
+            "default": "",
+            "required": false,
+            "computed": false
+          },
+          {
+            "key": "refundReceiver",
+            "label": "Refund Receiver",
+            "type": "string",
+            "placeholder": "0x...",
+            "list": false,
+            "helpText": "Enter receiver's blockchain address",
+            "default": "",
+            "required": false,
+            "computed": false
+          },
+          {
+            "key": "signatures",
+            "label": "Signatures",
+            "type": "string",
+            "placeholder": "",
+            "list": false
+          },
+          {
+            "key": "additionalInfo",
+            "label": "Additional Info",
+            "type": "string",
+            "placeholder": "Provide additional information",
+            "list": false,
+            "helpText": "",
+            "default": "",
+            "required": false,
+            "computed": false
+          }
+        ],
+        "outputFields": [
+          {
+            "key": "__transactionHash",
+            "label": "Transaction Hash",
+            "type": "string",
+            "list": false
+          },
+          {
+            "key": "__chainId",
+            "label": "Chain ID",
+            "type": "string",
+            "list": false
+          },
+          {
+            "key": "to",
+            "label": "To",
+            "type": "string",
+            "placeholder": "Enter a blockchain address",
+            "list": false
+          },
+          {
+            "key": "value",
+            "label": "Value",
+            "type": "string",
+            "placeholder": "",
+            "list": false
+          },
+          {
+            "key": "data",
+            "label": "Data",
+            "type": "string",
+            "placeholder": "",
+            "list": false
+          },
+          {
+            "key": "operation",
+            "label": "Operation",
+            "type": "number",
+            "placeholder": "",
+            "list": false
+          },
+          {
+            "key": "safeTxGas",
+            "label": "Safe Tx Gas",
+            "type": "string",
+            "placeholder": "",
+            "list": false
+          },
+          {
+            "key": "baseGas",
+            "label": "Base Gas",
+            "type": "string",
+            "placeholder": "",
+            "list": false
+          },
+          {
+            "key": "gasPrice",
+            "label": "Gas Price",
+            "type": "string",
+            "placeholder": "",
+            "list": false
+          },
+          {
+            "key": "gasToken",
+            "label": "Gas Token",
+            "type": "string",
+            "placeholder": "Enter a blockchain address",
+            "list": false
+          },
+          {
+            "key": "refundReceiver",
+            "label": "Refund Receiver",
+            "type": "string",
+            "placeholder": "Enter a blockchain address",
+            "list": false
+          },
+          {
+            "key": "signatures",
+            "label": "Signatures",
+            "type": "string",
+            "placeholder": "",
+            "list": false
+          },
+          {
+            "key": "additionalInfo",
+            "label": "Additional Info",
+            "type": "string",
+            "placeholder": "",
+            "list": false
+          }
+        ],
+        "sample": {
+          "__transactionHash": "0x05a8f93b00cf1b744f65b6b5e95f9b9e0859cc05f64dda5a868bb303d1a6cbe7",
+          "__chainId": "1337",
+          "to": "0xa7d9ddbe1f17865597fbd27ec712455208b6b76d",
+          "value": "1349",
+          "data": "0xca35b7d915458ef540ade6068dfe2f44e8fa733c",
+          "safeTxGas": "104",
+          "baseGas": "20",
+          "gasPrice": "198",
+          "gasToken": "0xDeaDBeef2cB0F62D14d9e5504B4bFe4b40Df07c7",
+          "refundReceiver": "0x5aAeb6053F3E94C9b9A09f33669435E7Ef1BeAed",
+          "additionalInfo": "This is any form of additional information you may have",
+          "signatures": "hello1234",
+          "operation": "24557"
+        }
+      }
+    }
+  ],
+  "actions": [
+    {
+      "key": "gnosisSafeSimpleTransfer",
+      "name": "Transfer to Address",
+      "display": {
+        "label": "Transfer to Address",
+        "description": "Transfer a native token to address",
+        "instructions": "Use this to transfer a native token (e.g. ETH) to address",
+        "featured": false
+      },
+      "operation": {
+        "type": "blockchain:call",
+        "signature": "!gnosisSafeSimpleTransfer",
+        "inputFields": [
+          {
+            "key": "to",
+            "label": "Recipient",
+            "type": "string",
+            "placeholder": "0x...",
+            "list": false,
+            "required": true,
+            "helpText": "Enter recipient's wallet address",
+            "default": "",
+            "computed": false
+          },
+          {
+            "key": "value",
+            "label": "Amount",
+            "type": "string",
+            "placeholder": "Enter token amount",
+            "list": false,
+            "required": true,
+            "helpText": "",
+            "default": "",
+            "computed": false
+          },
+          {
+            "key": "_grinderyUnitConversion_value",
+            "type": "string",
+            "default": "ether->wei",
+            "list": false,
+            "computed": true
+          }
+        ],
+        "outputFields": [],
+        "sample": {
+          
+        }
+      }
+    },
+    {
+      "key": "gnosisSafeSimpleTransferToken",
+      "name": "Transfer Token to Address",
+      "display": {
+        "label": "Transfer Token to Address",
+        "description": "Transfer an ERC-20 token to address",
+        "instructions": "Use this to transfer an ERC-20 token (e.g. USDC) to address",
+        "featured": false
+      },
+      "operation": {
+        "type": "blockchain:call",
+        "signature": "!gnosisSafeSimpleTransfer",
+        "inputFields": [
+          {
+            "key": "to",
+            "label": "Recipient",
+            "type": "string",
+            "placeholder": "0x...",
+            "list": false,
+            "required": true,
+            "helpText": "Enter recipient's wallet address",
+            "default": "",
+            "computed": false
+          },
+          {
+            "key": "tokenContractAddress",
+            "label": "Token Contract Address",
+            "type": "string",
+            "placeholder": "0x...",
+            "list": false,
+            "required": true,
+            "helpText": "Enter the token's contract address",
+            "default": "",
+            "computed": false
+          },
+          {
+            "key": "value",
+            "label": "Amount",
+            "type": "string",
+            "placeholder": "Enter token amount",
+            "list": false,
+            "required": true,
+            "helpText": "Enter the amount of tokens you want to transfer",
+            "default": "",
+            "computed": false
+          },
+          {
+            "key": "_grinderyUnitConversion_value",
+            "type": "string",
+            "default": "erc20Decimals[tokenContractAddress]",
+            "list": false,
+            "computed": true
+          }
+        ],
+        "outputFields": [],
+        "sample": {
+          
+        }
+      }
+    }
+  ],
+  "icon": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAATASURBVHgB5ZpPbBRVHMe/b3YptrYFk9IQBW0TuZEoRiOhBdsaiXopBzmYCAcOYkBju9uVEIg2pbHB7h9rwIAHItF4oBzwYKIl1JqKlqRq/HeRQ6sgmhYDupuyqbvz/L7ZXbq7zLYznWk7jZ9kZ9689+bN+733e/9+vwWWOQJu0PliBSrLt0KseAJSbmSpaxhbA4nKbI6b/E0w/l/GfQNN/xz/XB1EZ/80HOJMgKOvPgWf7yCE2MSKrYY94pDiIoQ8iY7IOcwT+wIc31eJZMXzrHAXINfCDQTGWdYRjFw5jf7+tL1X7dDb1gThO8VQPRYCJYjELvbIl1Zf8VnKJaVAdTwGaCf4dA8WDqWGe7B9ix9Pbx7BZyOpuV6Yuwd6X6oFKs9SV7diMRFyFCl/Kw68dW3WbLMlojuwHndpF9gFG7AUZMbGNgSjV0pnKcXRl++Ff+VF6mQdlpbLnK0aEQpPmCVqpq9E28uhlX3sgcorNrCWZ41xaIK5AGlxiHP7o/AKkuMvGoqaJd0pVSzUgLRueRpbVGS6GaG3h/KjCnvgzE4fdP1DeBW1BqmFNI9CAa4+sNsjel+KemMXkEehAFK+Dq8jZVf+44wA4bYdHm/9HGuNTWSWGQGEfy+WC37/wVwwMwt1dpahMn6doSq4ww32NdcRMcUmKoMu7+e0vB3ucROJ+H3ofG/KbzxW/N3CznCj8gn+DiNRdZKNkixI6e2opzBd1OEX4JzVqL67kfeBjABCa4FzbkCmmhDq+8E0NRQe4xjbjVhwEjra4ZQUmnkdyIwBIR+BU3QZKFn5HIIiBCIBhobgFE1sNG7ZklfAGd/jtej7lnNLcQSOETXqmpuFauEEKS/Yyh8KD/J6Hc4wBMiMAQiehCTmjcSPsEtHZI3lvOHgPl6PF8UaWwoNbuBzqZyS5YvvSiVle0BPOLKwyMyAskWk4xxVb5WlvLp82CRW2Zpuq5DSxwcxXwQet5U/EniWlW+1nN9cu40TmpbNMAknSGyhnj5nKe87r6yELrrhFGXlQ04AgZ/hnFOItc29nkyX9fB7m+AUHd+qW27wDcE5VUj7LrEn2tHOM3Ux4eBj1PtPGHK+Ciukrqbi3GZOGWerfgds2zdLcY2r+yUO7r/4JY4zUce4JrhHnPutGu63pmemnkhwkLrcjOWAFJ9yMXxGBWfmb4keLBeURTsXLEjo7fiDie5YnBcKIcdpqbttXNaKEt+A9ynYCBYKUH7rI17H4FVU6ysfQh6FAux/N8EBsgdeRYpdxQ6QO/0D578ap31e+QA2w1t0cwd7ujjSfBcZjLSzu4bhFYQYpWPwTbMkcwHU0U+fUnuby1hqlN6nkq0IxG6ZJZfex4dOTCApnzQKWDpUA27DgWMlvTSzH0QO0zOS8jdw6zuKxUaKYcOxMYt3RmHtFKMcHmkffQbyEBaHPgTDHIdiznOuvWNYONhIIT5gy9RhYRgzpvFQeMjqC9bcrDkGvv4Nq9Ydw/rqXyn6QxljgCv8yYYJoDy5H219v9h50dlfDcLBHfzwXuhaA+/2TJOCZ1oJdVjv4fx+HvPEnT97nNlZhvF1LYaJ0rDyGYayWqpDpoeEYTRQ5+5J6vVPnBS+oHF2WBln8X/nP8UvY/QI84C8AAAAAElFTkSuQmCC",
+  "type": "web3",
+  "user": "eip155:1:0x4245cd11b5a9E54F57bE19B643E564AA4Ee86D1b",
+  "workspace": "ws-499e41a8-c813-4d6a-aaa8-4ecf686e5e9d",
+  "access": "Workspace"
+}
