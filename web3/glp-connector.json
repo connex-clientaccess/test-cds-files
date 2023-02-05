@@ -1,6 +1,6 @@
 {
   "key": "glp-connector",      
-  "name": "GLP Connector",
+  "name": "GLP Connector", 
   "version": "1.0.0",
   "platformVersion": "1.0.0",
   "type": "web3",
