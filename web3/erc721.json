@@ -1,7 +1,7 @@
 {
   "key": "erc721",
   "name": "NFT on EVM Chains",
-  "version": "1.0.0",
+  "version": "1.0.0", 
   "platformVersion": "1.0.0",
   "triggers": [
     {
@@ -704,8 +704,4 @@
   "user": "eip155:1:0x4245cd11b5a9E54F57bE19B643E564AA4Ee86D1b",
   "workspace": "ws-499e41a8-c813-4d6a-aaa8-4ecf686e5e9d",
   "access": "Workspace"
-<<<<<<< HEAD
 }
-=======
-}
->>>>>>> d5ffa017fd8505ae72e5237e046e00ec7ef57d75

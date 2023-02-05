@@ -2,7 +2,7 @@
   "key": "gnosisSafe",   
   "name": "Gnosis Safe",   
   "version": "1.0.0",
-  "platformVersion": "1.0.0",
+  "platformVersion": "1.0.0", 
   "triggers": [
     {
       "key": "SafeMultiSigTransactionTrigger",
