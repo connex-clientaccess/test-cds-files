@@ -5,7 +5,7 @@
   "platformVersion": "1.0.0",  
   "triggers": [ 
     {
-      "key": "newTransaction",
+      "key": "newTransaction", 
       "name": "New Transaction",
       "display": {
         "label": "New Transaction",
