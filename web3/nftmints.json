@@ -5,7 +5,7 @@
   "platformVersion": "1.0.0",
   "type": "web3",
   "actions": [
-    {
+    { 
       "key": "evmMint",
       "name": "EVM Mint",
       "display": {
